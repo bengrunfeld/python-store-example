@@ -6,3 +6,8 @@
 * The product information the User inputted should be stored as a Dictionary, formatted as JSON and written to a local file.
 * If User chooses “Product List”, App should read the contents of the JSON file, but only print the values to the screen
 
+## Running the program
+
+To run this program, download the directory to your computer, then `cd` into it and use the Python command to execute it. 
+
+    python main.py
