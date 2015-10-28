@@ -6,12 +6,12 @@ class Product:
     """Create and list products"""
 
     def __init__(self): 
-        """Init has been left here to demonstrate its place in the code"""
+        """This demonstrate __init__'s place in the code"""
         pass
                 
     def create_product(self, product_name, product_price, product_description):
-        """Grab the instance variables, place them in a dict, 
-        parse with the JSON module, then store them in a file"""
+        """Grab the instance variables, put them into a dict, 
+        parse using the JSON module, then store them in a file"""
 
         self.name = product_name
         self.price = product_price
@@ -37,11 +37,11 @@ class Product:
         for res in results:
             data.append(json.loads(res))
 
-        print '========================'
+        print '------------------------'
         print '========================'
 
         for d in data:
             print d['name'], d['price'], d['description']
 
         print '========================'
-        print '========================'
+        print '------------------------'
