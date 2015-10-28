@@ -9,6 +9,27 @@ def print_menu():
     print '3. Exit'
     print 'Make a choice: ',
 
+def get_new_name():
+    """Gets input from User for a new name"""
+
+    print 'Enter new name: ',
+    return raw_input()
+
+
+def get_new_price():
+    """Gets input from User for a new price"""
+
+    print 'Enter new price: ',
+    return raw_input()
+
+
+def get_new_description():
+    """Gets input from User for a new description"""
+
+    print 'Enter new description: ',
+    return raw_input()
+
+
 def process_user_input(choice):
     """Chooses what to do based on User input"""
     if choice == '1':
@@ -21,14 +42,17 @@ def process_user_input(choice):
         prod_obj = products.Product()
         prod_obj.create_product(prod_name, prod_price, prod_desc)
         return False 
+
     elif choice == '2':
         prod_obj = products.Product()
         prod_obj.list_products()
         return False 
+
     elif choice == '3':
         # User exits program
         print 'Goodbye!' 
         return True 
+
     else:
         print '!!! Invalid choice !!!'
         print '!!!  CHOOSE AGAIN  !!!'
