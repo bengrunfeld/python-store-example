@@ -4,29 +4,29 @@ import products
 
 def print_menu():
     """Prints main menu"""
-    print '1. Create new product'
-    print '2. List products'
+    print '1. Make a new item'
+    print '2. Output a list of items'
     print '3. Exit'
     print 'Make a choice: ',
 
 def get_new_name():
     """Gets input from User for a new name"""
 
-    print 'Enter new name: ',
+    print 'Type new item name: ',
     return raw_input()
 
 
 def get_new_price():
     """Gets input from User for a new price"""
 
-    print 'Enter new price: ',
+    print 'Type new item price: ',
     return raw_input()
 
 
 def get_new_description():
     """Gets input from User for a new description"""
 
-    print 'Enter new description: ',
+    print 'Type new item description: ',
     return raw_input()
 
 
