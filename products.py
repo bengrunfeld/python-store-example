@@ -6,11 +6,11 @@ class Product:
     """Create and list products"""
 
     def __init__(self): 
-        """Init has been left here to demonstrate its place in the code"""
+        """Init is the constructor for Python classes"""
         pass
                 
     def create_product(self, product_name, product_price, product_description):
-        """Grab the instance variables, place them in a dict, 
+        """Save variables as instance variables, place them in a dict, 
         parse with the JSON module, then store them in a file"""
 
         self.name = product_name
